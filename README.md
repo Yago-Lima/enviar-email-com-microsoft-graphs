@@ -1,5 +1,17 @@
 # Passo a passo para consumir a API de e-mails do Microsoft Graph
+## Requisitos
+Antes de começar, certifique-se de ter:
 
+- **Python 3.8+** instalado
+- Biblioteca **requests** instalada:
+  ```bash
+  pip install requests
+  ```
+- Uma conta no **Microsoft Entra ID** com permissões de administrador
+- Aplicativo registrado no Entra ID com:
+  - Permissão **Mail.Send** do tipo **Application**
+  - **Client ID**, **Tenant ID** e **Client Secret** salvos
+- Acesso à API Microsoft Graph
 ## 1. No Entra ID:
 - Registrar o app
 - Definir para apenas contas no diretório local
@@ -31,17 +43,3 @@ print("E-mail enviado com sucesso!")
 ## 5. Basta configurar seu e-mail e pronto!
 Sua criatividade é o limite.
 
-
-## Requisitos
-Antes de começar, certifique-se de ter:
-
-- **Python 3.8+** instalado
-- Biblioteca **requests** instalada:
-  ```bash
-  pip install requests
-  ```
-- Uma conta no **Microsoft Entra ID** com permissões de administrador
-- Aplicativo registrado no Entra ID com:
-  - Permissão **Mail.Send** do tipo **Application**
-  - **Client ID**, **Tenant ID** e **Client Secret** salvos
-- Acesso à API Microsoft Graph
